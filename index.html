@@ -8,11 +8,17 @@
 </head>
 <body>
     <center>
-        <h1>Bienvenido</h1>
+        <h1 id="tituloBienvenida">Bienvenido</h1>
     </center>
-    <p>¿Me podrías decir tu nombre y tu edad?</p>
-    <h4>Nombre:</h4><input type="text" id="nombreInput">
-    <h4>Edad:</h4><input type="text" id="edadInput">
+    <h3 id="etiquetaTidioma">Seleccionar Idioma</h3>
+    <select id="idiomaSelector">
+       
+        <option value="ES">Español</option>
+        <option value="EN">English</option>
+    </select>
+    <h3 id="pregunta">¿Me podrías decir tu nombre y tu edad?</h3>
+    <h4 id="etiquetaNombre">Nombre:</h4><input type="text" id="nombreInput">
+    <h4 id="etiquetaEdad">Edad:</h4><input type="text" id="edadInput">
     <button id="miBoton">Listo</button>
     <div id="mensaje"></div>
 </body>
