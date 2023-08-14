@@ -47,10 +47,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function obtenerSaludoHora(hora) {
+        let saludoHora;
+
+        if (hora >= 6 && hora < 12) {
+            saludoHora = "Buenos días";
+        } else if (hora >= 12 && hora < 18) {
+            saludoHora = "Buenas tardes";
+        } else {
+            saludoHora = "Buenas noches";
+        }
+
+        return saludoHora;
+    }
+
     function mostrarSaludo(nombre, genero, edad) {
+        const fechaActual = new Date();
+        const horaActual = fechaActual.getHours();
+        const saludoHora = obtenerSaludoHora(horaActual);
+
         let saludo;
 
-         if (edad >= 0 && edad <= 10) {
+           if (edad >= 0 && edad <= 10) {
             if (genero === "hombre") {
                 saludo = "pequeño";
             } else {
@@ -58,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         } else if (edad >= 11 && edad <= 23) {
             if (genero === "hombre") {
-                saludo = "joven";
+                saludo = "Joven";
             } else {
-                saludo = "señorita";
+                saludo = "Señorita";
             }
         } else if (genero === "hombre") {
             saludo = "Señor";
@@ -70,7 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
             saludo = "persona";
         }
 
-        mostrarMensaje(nombre, saludo);
+        mostrarMensaje(nombre, `${saludoHora}, ${saludo} ${nombre}!¿En qué puedo ser de ayuda?`);
     }
 });
+
 
