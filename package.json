@@ -1,0 +1,16 @@
+{
+  "name": "5.-tareaimplementarsaludadorincremental",
+  "version": "1.0.0",
+  "description": "Practica 5\r Realizado por: Dilan Alavi G.\r Desarrollando el bot Saludador:\r  Siguiendo desarrollo incremental",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dilan Alavi",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
