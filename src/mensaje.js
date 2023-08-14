@@ -1,6 +1,6 @@
 export function mostrarMensaje(texto) {
     const mensajeDiv = document.getElementById("mensaje");
     const nuevoMensaje = document.createElement("p");
-    nuevoMensaje.textContent = texto;
+    nuevoMensaje.innerHTML = `<strong>${texto}</strong>`;
     mensajeDiv.appendChild(nuevoMensaje);
 }
