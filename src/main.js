@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     function obtenerSaludoHora(hora, idioma) {
         let saludoHora;
-    
+        //let saldo = (data.gener || "hola")    
         if (idioma === "ES") {
             if (hora >= 6 && hora < 12) {
                 saludoHora = "Buenos días";
